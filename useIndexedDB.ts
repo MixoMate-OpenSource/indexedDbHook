@@ -31,7 +31,6 @@ const useIndexedDB = (tableName: Tables) => {
   const [db, setDb] = useState<IDBPDatabase<DB_Schema> | null>(null);
   useEffect(() => {
     const initDB = async () => {
-      console.log("meta", process.env.NODE_TEST);
       const database = await openDB<DB_Schema>(db, 1, {
         upgrade(db) {
           if (!db.objectStoreNames.contains(tableName)) {
