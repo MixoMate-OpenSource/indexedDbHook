@@ -1,4 +1,4 @@
-## Example Using IndexDb in project
+## Example Using IndexDb in React/NextJS project
 
 ```tsx
 // add this line at top of the file
